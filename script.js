@@ -102,4 +102,6 @@
   }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
 
   sections.forEach(sec => spy.observe(sec));
+
+  document.addEventListener('contextmenu', e => e.preventDefault());
 })();
