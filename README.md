@@ -21,9 +21,9 @@ A single-page, fully responsive static site that presents the corporate constitu
 | 01 | **Founder Blueprint (The Heart)** | Vision, Mission, Motto, and CEO mindset quote |
 | 02 | **The Four Pillars** | Logo symbolism + four core values (Champion the Mission, Be a Host, Embrace the Adventure, Be a Cereal Entrepreneur) |
 | 03 | **Constitution (Volume II)** | Ten immutable corporate articles with ledes (dignity, character over skill, zero corruption, creator freedom, no financial layoffs, peaceful resignation, equality, no forced participation, continuous learning) |
-| 04 | **Culture Book (Volume III)** | Values chip list, rejected behaviors list, and positive reframe |
+| 04 | **Culture Book (Volume III)** | Values chip list, rejected behaviors list (including: micromanagement is not a word in this company's dictionary), and positive reframe |
 | 05 | **Leadership Handbook (Volume IV)** | CEO philosophy, comparison card (instead of asking / leaders first ask), supportive check-list |
-| 06 | **Work Culture (Volume V)** | Remote-first, family-first, health-first tag grid |
+| 06 | **Work Culture (Volume V)** | Remote-first, family-first, health-first tag grid (the word "micromanage" does not exist here) |
 | 07 | **Creative Bible (Volume VI)** | Teams, Individuals, Every Idea triads |
 | 08 | **Human Relations (Volume VII)** | No titles, no excessive formalities, use names, no forced friendships, no fake pakikisama |
 | 09 | **Atatakasa Aikido (Volume VIII)** | Weekend program, purpose, activities, philosophy, founder & leadership details, inclusivity & open sensei policy, Weekend Ukemi healing protocol |

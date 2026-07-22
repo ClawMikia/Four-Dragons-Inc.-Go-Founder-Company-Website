@@ -601,4 +601,28 @@ html[data-nav="right"] .nav-links a{flex-direction:row-reverse; text-align:right
   body{font-size:16.5px;}
   .hero{padding:5rem 1.25rem 3.5rem;}
   .hero-emblem{width:112px; height:112px;}
+
+  .logo-modal-img{
+    width:clamp(140px, 40vw, 280px);
+    height:clamp(140px, 40vw, 280px);
+  }
+  .logo-modal-body{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:1.5rem;
+  }
+  .logo-modal-text{
+    align-items:center;
+  }
+  .logo-modal-details{
+    text-align:center;
+  }
+  .logo-modal-dim{
+    text-align:center;
+  }
+  .logo-modal-close{
+    top:.75rem;
+    right:.75rem;
+  }
 }
