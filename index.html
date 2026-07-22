@@ -131,7 +131,16 @@
 
   <!-- ===== FOUR PILLARS ===== -->
   <section class="section alt" id="values">
-    <p class="vol">The Company Logo — The “4” Text Symbol</p>
+    <div class="dragon-symbol-block">
+      <button class="dragon-symbol-btn" id="dragonLogoBtn" aria-label="View larger company logo">
+        <img src="assets/company_logo.png" alt="Dragon Head Symbol" class="dragon-symbol-img">
+      </button>
+      <div class="dragon-symbol-text">
+        <strong>Dragon Head Symbol:</strong>
+        <p>The Founder loves dragons especially DRAGON Type Pokemon and Moves.</p>
+      </div>
+    </div>
+    <p class="vol">The Company Logo — The "4" Text Symbol</p>
     <h2>The Four Core Values</h2>
     <p class="section-lede">The dragon head at the center of the emblem carries the Founder's love of dragons — especially Dragon-type Pokémon and their moves; the number four, split in dragon-blue and dragon-red, stands for the four pillars every creator at Four Dragons Inc. is asked to carry.</p>
 
@@ -347,6 +356,27 @@
       <li>Streaming</li><li>Merchandise</li><li>Theme Parks</li>
     </ul>
 
+    <div class="limitations-block">
+      <h3>Content Standards</h3>
+      <p class="section-lede">Creators and developers are expected to produce content that uplifts, inspires, and brings people together. The following themes are not permitted across any product:</p>
+      <ul class="limitations-list">
+        <li>Brutal or excessively violent content</li>
+        <li>Horror, scary, or disturbing imagery</li>
+        <li>Inappropriate or mature themes</li>
+        <li>Anything that creates a negative emotional impact</li>
+        <li>Cynical, hopeless, or fear-based messaging</li>
+        <li>Content that normalizes suffering or despair</li>
+      </ul>
+      <p class="section-lede">Instead, all content should strive to be friendly, hopeful, and positive. We create worlds and stories that inspire courage, kindness, joy, and connection. Every project under Four Dragons Inc. should leave audiences feeling better than before.</p>
+      <ul class="standards-list">
+        <li>+ Friendly &amp; Welcoming</li>
+        <li>+ Inspirational &amp; Hopeful</li>
+        <li>+ Positive &amp; Joyful</li>
+        <li>+ Kind &amp; Compassionate</li>
+        <li>+ Courageous &amp; Adventurous</li>
+      </ul>
+    </div>
+
     <div class="future">
       <p class="vol">Volume XI — Future Research</p>
       <p class="section-lede">This book continuously evolves — artificial intelligence, global law, finance, psychology, education, entertainment, business, game design, animation, leadership, Japanese management philosophy, health, family wellness, and martial arts, among others.</p>
@@ -366,6 +396,25 @@
     <p>Four Dragons Inc. Go (演劇) — Tokyo, Japan &amp; Decentralized Worldwide</p>
     <p class="footer-sub">Christopher Lee Cajes · Founder, CEO &amp; Chairman</p>
   </footer>
+
+  <div class="logo-modal" id="logoModal" role="dialog" aria-modal="true" aria-label="Company logo enlarged">
+    <div class="logo-modal-backdrop" id="logoModalBackdrop"></div>
+    <div class="logo-modal-content">
+      <button class="logo-modal-close" id="logoModalClose" aria-label="Close modal">✕</button>
+      <div class="logo-modal-body">
+        <img src="assets/company_logo.png" alt="Four Dragons Inc. Go — company logo enlarged" class="logo-modal-img">
+        <div class="logo-modal-text">
+          <p class="logo-modal-details">
+            <strong>Dragon Head Symbol</strong><br>
+            The Founder loves dragons especially DRAGON Type Pokemon and Moves.
+          </p>
+          <p class="logo-modal-dim">
+            <span class="pillar-index">4</span> The Company Logo — The "4" Text Symbol
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </main>
 

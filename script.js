@@ -74,7 +74,10 @@
   navClose.addEventListener('click', closeDrawer);
   scrim.addEventListener('click', closeDrawer);
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeDrawer();
+    if (e.key === 'Escape') {
+      if (document.getElementById('logoModal').classList.contains('open')) closeLogoModal();
+      else closeDrawer();
+    }
   });
   nav.querySelectorAll('.nav-links a').forEach(a => {
     a.addEventListener('click', closeDrawer);
@@ -102,6 +105,24 @@
   }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
 
   sections.forEach(sec => spy.observe(sec));
+
+  /* ---------- logo modal ---------- */
+  const dragonLogoBtn = document.getElementById('dragonLogoBtn');
+  const logoModal = document.getElementById('logoModal');
+  const logoModalClose = document.getElementById('logoModalClose');
+  const logoModalBackdrop = document.getElementById('logoModalBackdrop');
+
+  function openLogoModal(){
+    logoModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLogoModal(){
+    logoModal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  dragonLogoBtn.addEventListener('click', openLogoModal);
+  logoModalClose.addEventListener('click', closeLogoModal);
+  logoModalBackdrop.addEventListener('click', closeLogoModal);
 
   document.addEventListener('contextmenu', e => e.preventDefault());
 })();
