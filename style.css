@@ -52,6 +52,16 @@ html[data-theme="light"]{
   --shadow: 0 20px 50px rgba(7,3,60,.12);
 }
 
+html[data-theme="light"] .logo-modal-details{
+  color:#000;
+}
+html[data-theme="light"] .logo-modal-dim{
+  color:#000;
+}
+html[data-theme="light"] .logo-modal-details strong{
+  color:#000;
+}
+
 *,*::before,*::after{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 @media (prefers-reduced-motion:reduce){
@@ -525,7 +535,7 @@ html[data-nav="right"] .nav-links a{flex-direction:row-reverse; text-align:right
 
 .logo-modal{
   position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center;
-  background:rgba(0,0,0,.88); padding:1.5rem;
+  background:rgba(0,0,0,.6); padding:1.5rem;
   opacity:0; visibility:hidden; pointer-events:none;
   transition:opacity .85s var(--ease), visibility .85s;
 }
@@ -536,6 +546,10 @@ html[data-nav="right"] .nav-links a{flex-direction:row-reverse; text-align:right
 }
 .logo-modal-content{
   position:relative; width:min(94vw, 1100px);
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius-m);
+  padding:clamp(1.25rem, 3vw, 2.5rem);
   transform:translateY(50px) scale(.97); opacity:0;
   transition:transform 1s var(--ease), opacity 1s var(--ease);
 }
@@ -544,7 +558,7 @@ html[data-nav="right"] .nav-links a{flex-direction:row-reverse; text-align:right
 .logo-modal-close{
   position:absolute; top:.5rem; right:.5rem; z-index:10;
   width:36px; height:36px; border-radius:50%;
-  background:rgba(0,0,0,.45); border:1px solid rgba(255,255,255,.25); color:#fff;
+  background:var(--surface-2); border:1px solid var(--border); color:var(--text);
   font-size:1.1rem; line-height:1; display:flex; align-items:center; justify-content:center;
   cursor:pointer; transition:background .2s, border-color .2s;
 }
