@@ -7,13 +7,13 @@ A dragon-gaming entertainment empire founding document web experience built on *
 - **Logic:** `script.js`
 - **Assets:** `assets/`
 
-A single-page, fully responsive static site that presents the corporate constitution, company values, leadership philosophy, culture book, creative bible, human relations guidelines, Aikido program, organization structure, and business plan.
+A single-page, fully responsive static site that presents the corporate constitution, company values, leadership philosophy, culture book, creative bible, human relations guidelines, organization structure, and business plan.
 
 ---
 
 ## Features & Functionality
 
-### Content Sections (Volumes I–XI)
+### Content Sections (Volumes I–X)
 
 | # | Section | Description |
 |---|---------|-------------|
@@ -26,9 +26,8 @@ A single-page, fully responsive static site that presents the corporate constitu
 | 06 | **Work Culture (Volume V)** | Remote-first, family-first, health-first tag grid (the word "micromanage" does not exist here) |
 | 07 | **Creative Bible (Volume VI)** | Teams, Individuals, Every Idea triads |
 | 08 | **Human Relations (Volume VII)** | No titles, no excessive formalities, use names, no forced friendships, no fake pakikisama |
-| 09 | **Atatakasa Aikido (Volume VIII)** | Weekend program, purpose, activities, philosophy, founder & leadership details, inclusivity & open sensei policy, Weekend Ukemi healing protocol |
-| 10 | **Organization (Volume IX)** | Org charts (executive levels and geographic tiers) |
-| 11 | **Business Plan (Volume X)** | Products list (games, anime, film, music, books, streaming, merchandise, theme parks) + Future Research (Volume XI) and a detailed methodology recommendation |
+| 09 | **Organization (Volume IX)** | Org charts (executive levels and geographic tiers) |
+| 10 | **Business Plan (Volume X)** | Products list (games, anime, film, music, books, streaming, merchandise, theme parks) + Future Research (Volume XI) and a detailed methodology recommendation |
 
 ### UI & Design System
 
