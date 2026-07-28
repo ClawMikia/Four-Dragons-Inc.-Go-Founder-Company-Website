@@ -35,7 +35,7 @@ html[data-theme="dark"]{
   --border: rgba(255,255,255,.10);
   --text:#f4f4fb;
   --text-muted: rgba(244,244,251,.68);
-  --text-faint: rgba(244,244,251,.42);
+  --text-faint: rgba(244,244,251,.72);
   --shadow: 0 20px 60px rgba(0,0,0,.55);
 }
 
