@@ -49,37 +49,49 @@
   </div>
 
   <ul class="nav-links">
-    <li><a href="#hero" data-label="00"><span class="n">00</span>Home</a></li>
-    <li><a href="#founder" data-label="01"><span class="n">01</span>Founder Blueprint</a></li>
-    <li><a href="#values" data-label="02"><span class="n">02</span>The Four Pillars</a></li>
-    <li><a href="#constitution" data-label="03"><span class="n">03</span>Constitution</a></li>
-    <li><a href="#culture" data-label="04"><span class="n">04</span>Culture Book</a></li>
-    <li><a href="#leadership" data-label="05"><span class="n">05</span>Leadership</a></li>
-    <li><a href="#worklife" data-label="06"><span class="n">06</span>Work Culture</a></li>
-    <li><a href="#creative" data-label="07"><span class="n">07</span>Creative Bible</a></li>
-    <li><a href="#relations" data-label="08"><span class="n">08</span>Human Relations</a></li>
-    <li><a href="#aikido" data-label="09"><span class="n">09</span>Atatakasa Aikido</a></li>
-    <li><a href="#org" data-label="10"><span class="n">10</span>Organization</a></li>
-    <li><a href="#business" data-label="11"><span class="n">11</span>Business Plan</a></li>
-    <li><a href="#future-research" data-label="12"><span class="n">12</span>Future Research</a></li>
-    <li><a href="#philosophy" data-label="13"><span class="n">13</span>Creative Philosophy</a></li>
+    <li><a href="#hero" data-label="00" data-i18n-key="navHome"><span class="n">00</span>Home</a></li>
+    <li><a href="#founder" data-label="01" data-i18n-key="navFounder"><span class="n">01</span>Founder Blueprint</a></li>
+    <li><a href="#values" data-label="02" data-i18n-key="navValues"><span class="n">02</span>The Four Pillars</a></li>
+    <li><a href="#constitution" data-label="03" data-i18n-key="navConstitution"><span class="n">03</span>Constitution</a></li>
+    <li><a href="#culture" data-label="04" data-i18n-key="navCulture"><span class="n">04</span>Culture Book</a></li>
+    <li><a href="#leadership" data-label="05" data-i18n-key="navLeadership"><span class="n">05</span>Leadership</a></li>
+    <li><a href="#worklife" data-label="06" data-i18n-key="navWork"><span class="n">06</span>Work Culture</a></li>
+    <li><a href="#creative" data-label="07" data-i18n-key="navCreative"><span class="n">07</span>Creative Bible</a></li>
+    <li><a href="#relations" data-label="08" data-i18n-key="navRelations"><span class="n">08</span>Human Relations</a></li>
+    <li><a href="#aikido" data-label="09" data-i18n-key="navAikido"><span class="n">09</span>Atatakasa Aikido</a></li>
+    <li><a href="#org" data-label="10" data-i18n-key="navOrg"><span class="n">10</span>Organization</a></li>
+    <li><a href="#business" data-label="11" data-i18n-key="navBusiness"><span class="n">11</span>Business Plan</a></li>
+    <li><a href="#future-research" data-label="12" data-i18n-key="navFuture"><span class="n">12</span>Future Research</a></li>
+    <li><a href="#philosophy" data-label="13" data-i18n-key="navPhilosophy"><span class="n">13</span>Creative Philosophy</a></li>
     </ul>
 
   <div class="nav-foot">
     <div class="settings-block">
-      <span class="settings-label">Theme</span>
+      <span class="settings-label" data-i18n-key="themeLabel">Theme</span>
       <div class="segmented" role="radiogroup" aria-label="Theme">
-        <button type="button" data-theme-choice="dark" class="seg-btn" role="radio" aria-checked="true">Dark</button>
-        <button type="button" data-theme-choice="light" class="seg-btn" role="radio" aria-checked="false">Light</button>
+        <button type="button" data-theme-choice="dark" class="seg-btn" role="radio" aria-checked="true" data-i18n-key="themeDark">Dark</button>
+        <button type="button" data-theme-choice="light" class="seg-btn" role="radio" aria-checked="false" data-i18n-key="themeLight">Light</button>
       </div>
     </div>
     <div class="settings-block">
-      <span class="settings-label">Navbar position</span>
+      <span class="settings-label" data-i18n-key="navLabel">Navbar position</span>
       <div class="segmented" role="radiogroup" aria-label="Navigation position">
-        <button type="button" data-nav-choice="top" class="seg-btn" role="radio" aria-checked="true">Top</button>
-        <button type="button" data-nav-choice="left" class="seg-btn" role="radio" aria-checked="false">Left</button>
-        <button type="button" data-nav-choice="right" class="seg-btn" role="radio" aria-checked="false">Right</button>
+        <button type="button" data-nav-choice="top" class="seg-btn" role="radio" aria-checked="true" data-i18n-key="navTop">Top</button>
+        <button type="button" data-nav-choice="left" class="seg-btn" role="radio" aria-checked="false" data-i18n-key="navLeft">Left</button>
+        <button type="button" data-nav-choice="right" class="seg-btn" role="radio" aria-checked="false" data-i18n-key="navRight">Right</button>
       </div>
+    </div>
+    <div class="settings-block">
+      <span class="settings-label" data-i18n-key="langLabel">Language</span>
+      <button class="lang-switch" id="langSwitch" type="button" role="switch" aria-checked="false" aria-label="Switch language">
+        <span class="lang-switch-track">
+          <span class="lang-switch-thumb"></span>
+        </span>
+        <span class="lang-switch-copy">
+          <span class="lang-switch-option active" data-lang="en">EN</span>
+          <span class="lang-switch-option" data-lang="ja">日本語</span>
+        </span>
+      </button>
     </div>
   </div>
 </nav>
@@ -91,44 +103,44 @@
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="hero-inner">
       <img src="assets/app_icon.png" alt="Four Dragons Inc. Go emblem — a dual dragon head circling a blue and red numeral four" class="hero-emblem">
-      <p class="eyebrow">Tokyo, Japan · Main Headquarters &amp; Decentralized Worldwide</p>
-      <h1>Four Dragons Inc. Go <span class="jp">(演劇)</span></h1>
-      <p class="hero-sub">A dragon-gaming entertainment empire building games, anime, film and music on a foundation of dignity, creative freedom, and <strong>Atatakasa (温かさ)</strong> — warmth.</p>
-      <p class="hero-founder">Christopher Lee Cajes — Founder, CEO &amp; Chairman</p>
+      <p class="eyebrow" data-i18n-key="heroEyebrow">Tokyo, Japan · Main Headquarters &amp; Decentralized Worldwide</p>
+      <h1 data-i18n-key="heroTitle">Four Dragons Inc. Go <span class="jp">(演劇)</span></h1>
+      <p class="hero-sub" data-i18n-key="heroSub">A dragon-gaming entertainment empire building games, anime, film and music on a foundation of dignity, creative freedom, and <strong>Atatakasa (温かさ)</strong> — warmth.</p>
+      <p class="hero-founder" data-i18n-key="heroFounder">Christopher Lee Cajes — Founder, CEO &amp; Chairman</p>
       <div class="hero-actions">
-        <a href="#founder" class="btn btn-primary">Read the Founder Blueprint</a>
-        <a href="#values" class="btn btn-ghost">See the Four Pillars</a>
+        <a href="#founder" class="btn btn-primary" data-i18n-key="heroPrimary">Read the Founder Blueprint</a>
+        <a href="#values" class="btn btn-ghost" data-i18n-key="heroSecondary">See the Four Pillars</a>
       </div>
     </div>
   </section>
 
   <!-- ===== VOLUME I — FOUNDER ===== -->
   <section class="section" id="founder">
-    <p class="vol">Volume I — Founder Blueprint (The Heart)</p>
-    <h2>Why does Four Dragons Inc. exist?</h2>
+    <p class="vol" data-i18n-key="founderVol">Volume I — Founder Blueprint (The Heart)</p>
+    <h2 data-i18n-key="founderTitle">Why does Four Dragons Inc. exist?</h2>
 
-    <blockquote class="statement">
+    <blockquote class="statement" data-i18n-key="founderQuote">
       “Four Dragons Inc. exists to give people the opportunity to create the entertainment they truly want to make — with passion, purpose, kindness, and artistic freedom. We build not only entertainment, but also people, families, and future creators.”
     </blockquote>
 
     <div class="triad">
       <div class="triad-card">
-        <h3>Vision</h3>
-        <p>Become one of the world's greatest entertainment companies while becoming one of the happiest places to work.</p>
+        <h3 data-i18n-key="visionTitle">Vision</h3>
+        <p data-i18n-key="visionText">Become one of the world's greatest entertainment companies while becoming one of the happiest places to work.</p>
       </div>
       <div class="triad-card">
-        <h3>Mission</h3>
-        <p>Create unforgettable entertainment. Empower creators. Support families. Inspire children. Improve people's lives.</p>
+        <h3 data-i18n-key="missionTitle">Mission</h3>
+        <p data-i18n-key="missionText">Create unforgettable entertainment. Empower creators. Support families. Inspire children. Improve people's lives.</p>
       </div>
       <div class="triad-card">
-        <h3>Motto</h3>
-        <p>“We don't build people. We build creators.”</p>
+        <h3 data-i18n-key="mottoTitle">Motto</h3>
+        <p data-i18n-key="mottoText">“We don't build people. We build creators.”</p>
       </div>
     </div>
 
     <div class="mindset">
-      <p class="mindset-quote">“They don't work for me. I work for them.”</p>
-      <p>A leader exists to remove obstacles, support growth, and enable others to do their best work.</p>
+      <p class="mindset-quote" data-i18n-key="mindsetQuote">“They don't work for me. I work for them.”</p>
+      <p data-i18n-key="mindsetText">A leader exists to remove obstacles, support growth, and enable others to do their best work.</p>
     </div>
   </section>
 
@@ -139,298 +151,298 @@
         <img src="assets/company_logo.png" alt="Dragon Head Symbol" class="dragon-symbol-img">
       </button>
       <div class="dragon-symbol-text">
-        <strong>Dragon Head Symbol:</strong>
-        <p>The Founder loves dragons especially DRAGON Type Pokemon and Moves.</p>
+        <strong data-i18n-key="dragonSymbolTitle">Dragon Head Symbol:</strong>
+        <p data-i18n-key="dragonSymbolText">The Founder loves dragons especially DRAGON Type Pokemon and Moves.</p>
       </div>
     </div>
-    <p class="vol">The Company Logo — The "4" Text Symbol</p>
-    <h2>The Four Core Values</h2>
-    <p class="section-lede">The dragon head at the center of the emblem carries the Founder's love of dragons — especially Dragon-type Pokémon and their moves; the number four, split in dragon-blue and dragon-red, stands for the four pillars every creator at Four Dragons Inc. is asked to carry.</p>
+    <p class="vol" data-i18n-key="valuesVol">The Company Logo — The "4" Text Symbol</p>
+    <h2 data-i18n-key="valuesTitle">The Four Core Values</h2>
+    <p class="section-lede" data-i18n-key="valuesLead">The dragon head at the center of the emblem carries the Founder's love of dragons — especially Dragon-type Pokémon and their moves; the number four, split in dragon-blue and dragon-red, stands for the four pillars every creator at Four Dragons Inc. is asked to carry.</p>
 
     <div class="pillars">
       <article class="pillar">
         <span class="pillar-index">01</span>
-        <h3>Champion the Mission</h3>
-        <p>Employees are united with the broader community to drive the company's ultimate purpose.</p>
+        <h3 data-i18n-key="pillarMissionTitle">Champion the Mission</h3>
+        <p data-i18n-key="pillarMissionText">Employees are united with the broader community to drive the company's ultimate purpose.</p>
       </article>
       <article class="pillar">
         <span class="pillar-index">02</span>
-        <h3>Be a Host</h3>
-        <p>The company emphasizes hospitality, encouraging teams to be caring, open, and encouraging in all professional relationships.</p>
+        <h3 data-i18n-key="pillarHostTitle">Be a Host</h3>
+        <p data-i18n-key="pillarHostText">The company emphasizes hospitality, encouraging teams to be caring, open, and encouraging in all professional relationships.</p>
       </article>
       <article class="pillar">
         <span class="pillar-index">03</span>
-        <h3>Embrace the Adventure</h3>
-        <p>Employees are encouraged to approach challenges with hopeful resilience, open curiosity, and an eagerness to grow.</p>
+        <h3 data-i18n-key="pillarAdventureTitle">Embrace the Adventure</h3>
+        <p data-i18n-key="pillarAdventureText">Employees are encouraged to approach challenges with hopeful resilience, open curiosity, and an eagerness to grow.</p>
       </article>
       <article class="pillar">
         <span class="pillar-index">04</span>
-        <h3>Be a Cereal Entrepreneur</h3>
-        <p>Determination and creative problem-solving in turning bold, sometimes unconventional ambitions into reality.</p>
+        <h3 data-i18n-key="pillarEntrepreneurTitle">Be a Cereal Entrepreneur</h3>
+        <p data-i18n-key="pillarEntrepreneurText">Determination and creative problem-solving in turning bold, sometimes unconventional ambitions into reality.</p>
       </article>
     </div>
   </section>
 
   <!-- ===== VOLUME II — CONSTITUTION ===== -->
   <section class="section" id="constitution">
-    <p class="vol">Volume II — Corporate Constitution</p>
-    <h2>This should almost never change</h2>
+    <p class="vol" data-i18n-key="constitutionVol">Volume II — Corporate Constitution</p>
+    <h2 data-i18n-key="constitutionTitle">This should almost never change</h2>
     <ol class="articles">
-      <li><h3>Every person deserves dignity.</h3></li>
-      <li><h3>Good human beings come before great talent.</h3><p>Character outweighs skill. Skills can be learned. Character must be lived.</p></li>
-      <li><h3>Zero corruption.</h3><p>No bribery. No abuse of authority. No favoritism. No exploitation.</p></li>
-      <li><h3>The company exists to improve people's lives.</h3><p>Profit exists to sustain the mission — not replace it.</p></li>
-      <li><h3>Everyone is a creator.</h3><p>Teams may create. Individuals may create. Employees may pitch completely original projects. Passion projects are encouraged.</p></li>
-      <li><h3>No layoffs caused solely by financial optimization.</h3><p>Whenever possible: relocate people, retrain people, create new opportunities. No matter what, the Founder will do everything in his power to protect his children — their jobs, their dreams, and their futures come first, always.</p></li>
-      <li><h3>Anyone may resign peacefully to pursue their own dreams.</h3><p>The company celebrates entrepreneurship. Leaving to build your own business is a success — not betrayal. Former members remain part of the Four Dragons family.</p></li>
-      <li><h3>Treat everyone equally.</h3><p>Titles do not determine worth. Executives and interns deserve equal human respect.</p></li>
-      <li><h3>No forced participation.</h3><p class="jp-quote">“Walang sapilitan.”</p><p>Respect personal boundaries. Real teamwork comes from willingness — not coercion.</p></li>
-      <li><h3>Continuous learning.</h3><p>Everyone remains a student. Everyone remains a teacher.</p></li>
+      <li><h3 data-i18n-key="article1Title">Every person deserves dignity.</h3></li>
+      <li><h3 data-i18n-key="article2Title">Good human beings come before great talent.</h3><p data-i18n-key="article2Text">Character outweighs skill. Skills can be learned. Character must be lived.</p></li>
+      <li><h3 data-i18n-key="article3Title">Zero corruption.</h3><p data-i18n-key="article3Text">No bribery. No abuse of authority. No favoritism. No exploitation.</p></li>
+      <li><h3 data-i18n-key="article4Title">The company exists to improve people's lives.</h3><p data-i18n-key="article4Text">Profit exists to sustain the mission — not replace it.</p></li>
+      <li><h3 data-i18n-key="article5Title">Everyone is a creator.</h3><p data-i18n-key="article5Text">Teams may create. Individuals may create. Employees may pitch completely original projects. Passion projects are encouraged.</p></li>
+      <li><h3 data-i18n-key="article6Title">No layoffs caused solely by financial optimization.</h3><p data-i18n-key="article6Text">Whenever possible: relocate people, retrain people, create new opportunities. No matter what, the Founder will do everything in his power to protect his children — their jobs, their dreams, and their futures come first, always.</p></li>
+      <li><h3 data-i18n-key="article7Title">Anyone may resign peacefully to pursue their own dreams.</h3><p data-i18n-key="article7Text">The company celebrates entrepreneurship. Leaving to build your own business is a success — not betrayal. Former members remain part of the Four Dragons family.</p></li>
+      <li><h3 data-i18n-key="article8Title">Treat everyone equally.</h3><p data-i18n-key="article8Text">Titles do not determine worth. Executives and interns deserve equal human respect.</p></li>
+      <li><h3 data-i18n-key="article9Title">No forced participation.</h3><p class="jp-quote" data-i18n-key="article9Quote">“Walang sapilitan.”</p><p data-i18n-key="article9Text">Respect personal boundaries. Real teamwork comes from willingness — not coercion.</p></li>
+      <li><h3 data-i18n-key="article10Title">Continuous learning.</h3><p data-i18n-key="article10Text">Everyone remains a student. Everyone remains a teacher.</p></li>
     </ol>
   </section>
 
   <!-- ===== VOLUME III — CULTURE ===== -->
   <section class="section alt" id="culture">
-    <p class="vol">Volume III — Culture Book</p>
-    <h2>Our Values</h2>
+    <p class="vol" data-i18n-key="cultureVol">Volume III — Culture Book</p>
+    <h2 data-i18n-key="cultureTitle">Our Values</h2>
     <ul class="chip-list">
-      <li>Kindness</li><li>Respect</li><li>Honesty</li><li>Passion</li><li>Family</li>
-      <li>Humility</li><li>Creativity</li><li>Courage</li><li>Responsibility</li>
-      <li>Compassion</li><li>Curiosity</li><li>Gratitude</li><li>Optimism</li><li>Service</li>
+      <li data-i18n-key="valueKindness">Kindness</li><li data-i18n-key="valueRespect">Respect</li><li data-i18n-key="valueHonesty">Honesty</li><li data-i18n-key="valuePassion">Passion</li><li data-i18n-key="valueFamily">Family</li>
+      <li data-i18n-key="valueHumility">Humility</li><li data-i18n-key="valueCreativity">Creativity</li><li data-i18n-key="valueCourage">Courage</li><li data-i18n-key="valueResponsibility">Responsibility</li>
+      <li data-i18n-key="valueCompassion">Compassion</li><li data-i18n-key="valueCuriosity">Curiosity</li><li data-i18n-key="valueGratitude">Gratitude</li><li data-i18n-key="valueOptimism">Optimism</li><li data-i18n-key="valueService">Service</li>
     </ul>
 
     <div class="reject-block">
-      <h3>We Reject</h3>
+      <h3 data-i18n-key="rejectTitle">We Reject</h3>
       <ul class="reject-list">
-        <li>Corruption</li><li>Bullying</li><li>Harassment</li><li>Discrimination</li>
-        <li>Manipulation</li><li>Cruelty</li><li>Abuse</li><li>Workplace politics</li>
-        <li>Toxic competition</li><li>Fear-based management</li><li>Toxic work culture</li>
-        <li>Micromanagement / Micromanaging / Micromanaginng</li>
+        <li data-i18n-key="rejectCorruption">Corruption</li><li data-i18n-key="rejectBullying">Bullying</li><li data-i18n-key="rejectHarassment">Harassment</li><li data-i18n-key="rejectDiscrimination">Discrimination</li>
+        <li data-i18n-key="rejectManipulation">Manipulation</li><li data-i18n-key="rejectCruelty">Cruelty</li><li data-i18n-key="rejectAbuse">Abuse</li><li data-i18n-key="rejectPolitics">Workplace politics</li>
+        <li data-i18n-key="rejectToxicCompetition">Toxic competition</li><li data-i18n-key="rejectFearMgmt">Fear-based management</li><li data-i18n-key="rejectToxicWork">Toxic work culture</li>
+        <li data-i18n-key="rejectMicromanage">Micromanagement / Micromanaging / Micromanaginng</li>
       </ul>
-      <p class="reframe">The word <em>"Micromanage" / "Micromanagement" / "Micromanaginng"</em> doesn't exist — not a vocabulary, not in the dictionary of Four Dragons Inc.</p><br />
-      <p class="reframe">Instead of saying <em>"No toxicity,"</em> define what you expect: <br /><br /> <strong>"We speak respectfully. We don't criticize people. We lift each other up."</strong></p>
-      <blockquote class="statement small">“Four Dragons Inc. has zero tolerance for toxic work culture — whether it comes from those in charge, peers, or outside folks. If the environment stops feeling safe, the Founder will act. He will protect his family.”</blockquote>
+      <p class="reframe" data-i18n-key="rejectReframe1">The word <em>"Micromanage" / "Micromanagement" / "Micromanaginng"</em> doesn't exist — not a vocabulary, not in the dictionary of Four Dragons Inc.</p><br />
+      <p class="reframe" data-i18n-key="rejectReframe2">Instead of saying <em>"No toxicity,"</em> define what you expect: <br /><br /> <strong>"We speak respectfully. We don't criticize people. We lift each other up."</strong></p>
+      <blockquote class="statement small" data-i18n-key="rejectQuote">“Four Dragons Inc. has zero tolerance for toxic work culture — whether it comes from those in charge, peers, or outside folks. If the environment stops feeling safe, the Founder will act. He will protect his family.”</blockquote>
     </div>
   </section>
 
   <!-- ===== VOLUME IV — LEADERSHIP ===== -->
   <section class="section" id="leadership">
-    <p class="vol">Volume IV — Leadership Handbook</p>
-    <h2>CEO Philosophy</h2>
-    <blockquote class="statement">“My people are not here to serve me. I exist to serve them.”</blockquote>
-    <blockquote class="statement">“I don't work for politics. I'm an entertainer, not a politician — my only agenda is to create worlds people love and build a family of creators who do the same.”</blockquote>
+    <p class="vol" data-i18n-key="leadershipVol">Volume IV — Leadership Handbook</p>
+    <h2 data-i18n-key="leadershipTitle">CEO Philosophy</h2>
+    <blockquote class="statement" data-i18n-key="leadershipQuote1">“My people are not here to serve me. I exist to serve them.”</blockquote>
+    <blockquote class="statement" data-i18n-key="leadershipQuote2">“I don't work for politics. I'm an entertainer, not a politician — my only agenda is to create worlds people love and build a family of creators who do the same.”</blockquote>
 
     <div class="compare">
       <div class="compare-card muted">
-        <span class="compare-tag">Instead of asking</span>
-        <p>“Why is performance low?”</p>
+        <span class="compare-tag" data-i18n-key="compareInstead">Instead of asking</span>
+        <p data-i18n-key="comparePrompt">“Why is performance low?”</p>
       </div>
       <div class="compare-card">
-        <span class="compare-tag">Leaders first ask</span>
-        <p>“How are you doing?”</p>
+        <span class="compare-tag" data-i18n-key="compareLeader">Leaders first ask</span>
+        <p data-i18n-key="compareQuestion">“How are you doing?”</p>
       </div>
     </div>
 
     <ul class="check-list">
-      <li>Are you okay?</li>
-      <li>Is something happening at home?</li>
-      <li>How can we help?</li>
-      <li>What support do you need?</li>
+      <li data-i18n-key="checklist1">Are you okay?</li>
+      <li data-i18n-key="checklist2">Is something happening at home?</li>
+      <li data-i18n-key="checklist3">How can we help?</li>
+      <li data-i18n-key="checklist4">What support do you need?</li>
     </ul>
-    <p class="section-lede">Only afterward do they discuss work performance. Success is measured by both people thriving <em>and</em> great products.</p>
+    <p class="section-lede" data-i18n-key="leadershipLead">Only afterward do they discuss work performance. Success is measured by both people thriving <em>and</em> great products.</p>
   </section>
 
   <!-- ===== VOLUME V — WORK CULTURE ===== -->
   <section class="section alt" id="worklife">
-    <p class="vol">Volume V — Work Culture</p>
-    <h2>Remote-first. Family-first. Health-first.</h2>
+    <p class="vol" data-i18n-key="workVol">Volume V — Work Culture</p>
+    <h2 data-i18n-key="workTitle">Remote-first. Family-first. Health-first.</h2>
     <div class="tag-grid">
-      <span>Flexible schedules where possible</span>
-      <span>No unnecessary overtime</span>
-      <span>No office politics</span>
-      <span>Performance over appearances</span>
-      <span>No mandatory overtime</span>
-      <span>No face time</span>
-      <span>No pretending to be busy</span>
-      <span>People stay as long as they are happy</span>
-      <span>The word "micromanage" does not exist here</span>
+      <span data-i18n-key="workTag1">Flexible schedules where possible</span>
+      <span data-i18n-key="workTag2">No unnecessary overtime</span>
+      <span data-i18n-key="workTag3">No office politics</span>
+      <span data-i18n-key="workTag4">Performance over appearances</span>
+      <span data-i18n-key="workTag5">No mandatory overtime</span>
+      <span data-i18n-key="workTag6">No face time</span>
+      <span data-i18n-key="workTag7">No pretending to be busy</span>
+      <span data-i18n-key="workTag8">People stay as long as they are happy</span>
+      <span data-i18n-key="workTag9">The word "micromanage" does not exist here</span>
     </div>
   </section>
 
   <!-- ===== VOLUME VI — CREATIVE BIBLE ===== -->
   <section class="section" id="creative">
-    <p class="vol">Volume VI — Creative Bible</p>
-    <h2>Every creator owns their passion.</h2>
+    <p class="vol" data-i18n-key="creativeVol">Volume VI — Creative Bible</p>
+    <h2 data-i18n-key="creativeTitle">Every creator owns their passion.</h2>
     <div class="triad">
-      <div class="triad-card"><h3>Teams</h3><p>Teams can create games. Teams can create anime.</p></div>
-      <div class="triad-card"><h3>Individuals</h3><p>Individuals can create games. Individuals can create anime.</p></div>
-      <div class="triad-card"><h3>Every Idea</h3><p>Original ideas are encouraged. Innovation belongs to everyone. No idea is rejected because of rank.</p></div>
+      <div class="triad-card"><h3 data-i18n-key="creativeTeamTitle">Teams</h3><p data-i18n-key="creativeTeamText">Teams can create games. Teams can create anime.</p></div>
+      <div class="triad-card"><h3 data-i18n-key="creativeIndividualTitle">Individuals</h3><p data-i18n-key="creativeIndividualText">Individuals can create games. Individuals can create anime.</p></div>
+      <div class="triad-card"><h3 data-i18n-key="creativeIdeaTitle">Every Idea</h3><p data-i18n-key="creativeIdeaText">Original ideas are encouraged. Innovation belongs to everyone. No idea is rejected because of rank.</p></div>
     </div>
   </section>
 
   <!-- ===== VOLUME VII — HUMAN RELATIONS ===== -->
   <section class="section alt" id="relations">
-    <p class="vol">Volume VII — Human Relations</p>
-    <h2>Respect comes from actions — not titles.</h2>
+    <p class="vol" data-i18n-key="relationsVol">Volume VII — Human Relations</p>
+    <h2 data-i18n-key="relationsTitle">Respect comes from actions — not titles.</h2>
     <div class="tag-grid">
-      <span>No Sir. No Ma'am.</span>
-      <span>No excessive corporate formalities</span>
-      <span>Use names</span>
-      <span>No forced friendships</span>
-      <span>No fake “pakikisama”</span>
+      <span data-i18n-key="relationsTag1">No Sir. No Ma'am.</span>
+      <span data-i18n-key="relationsTag2">No excessive corporate formalities</span>
+      <span data-i18n-key="relationsTag3">Use names</span>
+      <span data-i18n-key="relationsTag4">No forced friendships</span>
+      <span data-i18n-key="relationsTag5">No fake “pakikisama”</span>
     </div>
-    <p class="section-lede">Relationships between consenting adults are respected, provided they do not create conflicts of interest or harm others.</p>
-    <p class="jp-quote">“Pakikisama.” Not “Pakiki-sama!” — Walang sapilitan.</p>
+    <p class="section-lede" data-i18n-key="relationsLead">Relationships between consenting adults are respected, provided they do not create conflicts of interest or harm others.</p>
+    <p class="jp-quote" data-i18n-key="relationsQuote">“Pakikisama.” Not “Pakiki-sama!” — Walang sapilitan.</p>
   </section>
 
   <!-- ===== VOLUME VIII — AIKIDO ===== -->
   <section class="section" id="aikido">
-    <p class="vol">Volume VIII — Four Dragons Inc. Go · Atatakasa Aikido</p>
-    <h2>温かさ — Atatakasa</h2>
-    <p class="section-lede">Warmth. Kindness. Compassion. An optional weekend program — not a job requirement — open to everyone, families, children and guests alike.</p>
+    <p class="vol" data-i18n-key="aikidoVol">Volume VIII — Four Dragons Inc. Go · Atatakasa Aikido</p>
+    <h2 data-i18n-key="aikidoTitle">温かさ — Atatakasa</h2>
+    <p class="section-lede" data-i18n-key="aikidoLead">Warmth. Kindness. Compassion. An optional weekend program — not a job requirement — open to everyone, families, children and guests alike.</p>
 
     <div class="triad">
       <div class="triad-card">
-        <h3>Purpose</h3>
-        <p>Strengthen health. Build trust. Reduce stress. Promote humility. Encourage lifelong learning.</p>
+        <h3 data-i18n-key="aikidoPurposeTitle">Purpose</h3>
+        <p data-i18n-key="aikidoPurposeText">Strengthen health. Build trust. Reduce stress. Promote humility. Encourage lifelong learning.</p>
       </div>
       <div class="triad-card">
-        <h3>Weekend Activities</h3>
-        <p>Optional Aikido practice, meditation, stretching, tea gathering — with family participation welcome.</p>
+        <h3 data-i18n-key="aikidoWeekendTitle">Weekend Activities</h3>
+        <p data-i18n-key="aikidoWeekendText">Optional Aikido practice, meditation, stretching, tea gathering — with family participation welcome.</p>
       </div>
       <div class="triad-card">
-        <h3>Philosophy</h3>
-        <p>温かさ — Atatakasa. Warmth. Kindness. Compassion.</p>
+        <h3 data-i18n-key="aikidoPhilosophyTitle">Philosophy</h3>
+        <p data-i18n-key="aikidoPhilosophyText">温かさ — Atatakasa. Warmth. Kindness. Compassion.</p>
       </div>
     </div>
-    <p class="section-lede">Ranks never determine a person's worth. Higher-ranked visitors are warmly welcomed to teach whenever they wish.</p>
+    <p class="section-lede" data-i18n-key="aikidoLead2">Ranks never determine a person's worth. Higher-ranked visitors are warmly welcomed to teach whenever they wish.</p>
 
-    <h3 class="subhead">Four Dragons Inc. Go · Atatakasa Aikido (温かさ) — Tokyo, Japan</h3>
+    <h3 class="subhead" data-i18n-key="aikidoSubhead">Four Dragons Inc. Go · Atatakasa Aikido (温かさ) — Tokyo, Japan</h3>
     <div class="detail-grid">
       <div class="detail-card">
-        <h4>Founder &amp; Leadership</h4>
-        <p>Christopher Lee Cajes serves as CEO and Chairman.</p>
+        <h4 data-i18n-key="aikidoCard1Title">Founder &amp; Leadership</h4>
+        <p data-i18n-key="aikidoCard1Text">Christopher Lee Cajes serves as CEO and Chairman.</p>
       </div>
       <div class="detail-card">
-        <h4>Geographic &amp; Historical Landmark</h4>
-        <p>Headquartered in Tokyo, Japan, this represents a monumental milestone — the first-ever pioneer initiative where a Filipino leader serves as Chairman and CEO of a domestic Japanese enterprise operating directly in the birthplace of Aikido. This presence echoes the path of Steven Seagal, the first Westerner to successfully manage an official martial arts organization and dojo infrastructure on Japanese soil.</p>
+        <h4 data-i18n-key="aikidoCard2Title">Geographic &amp; Historical Landmark</h4>
+        <p data-i18n-key="aikidoCard2Text">Headquartered in Tokyo, Japan, this represents a monumental milestone — the first-ever pioneer initiative where a Filipino leader serves as Chairman and CEO of a domestic Japanese enterprise operating directly in the birthplace of Aikido. This presence echoes the path of Steven Seagal, the first Westerner to successfully manage an official martial arts organization and dojo infrastructure on Japanese soil.</p>
       </div>
       <div class="detail-card">
-        <h4>The “Atatakasa” (温かさ) Philosophy</h4>
-        <p>The organization takes its name from Atatakasa, meaning “Warmth” or “Kindness.” It translates O'Sensei Morihei Ueshiba's spiritual vision of universal harmony into a workspace and training hall defined by deep empathy, psychological safety, and unconditional care.</p>
+        <h4 data-i18n-key="aikidoCard3Title">The “Atatakasa” (温かさ) Philosophy</h4>
+        <p data-i18n-key="aikidoCard3Text">The organization takes its name from Atatakasa, meaning “Warmth” or “Kindness.” It translates O'Sensei Morihei Ueshiba's spiritual vision of universal harmony into a workspace and training hall defined by deep empathy, psychological safety, and unconditional care.</p>
       </div>
       <div class="detail-card">
-        <h4>Corporate &amp; Media Focus</h4>
-        <p>A highly progressive, multi-industry corporate empire spanning video game development, immersive entertainment show production, and alternative Aikido leadership.</p>
+        <h4 data-i18n-key="aikidoCard4Title">Corporate &amp; Media Focus</h4>
+        <p data-i18n-key="aikidoCard4Text">A highly progressive, multi-industry corporate empire spanning video game development, immersive entertainment show production, and alternative Aikido leadership.</p>
       </div>
       <div class="detail-card">
-        <h4>Radical Inclusivity &amp; Open Sensei Policy</h4>
-        <p>Structured as a tight-knit family empire where the Chairman works alongside his children, the company enforces absolute, uncompromised structural equality. Traditional martial-arts hierarchies, ranks, and dan boundaries are completely removed — visiting aikidokas, members, and children train or work as equals regardless of rank or background. The headquarters operates an open-door policy: any martial artist ranked higher than the Chairman is enthusiastically welcomed to take the floor as guest sensei for the day or weekend. The organization maintains a standing, open aspiration to host Doshu Moriteru Ueshiba, should he ever visit, as leading master sensei.</p>
+        <h4 data-i18n-key="aikidoCard5Title">Radical Inclusivity &amp; Open Sensei Policy</h4>
+        <p data-i18n-key="aikidoCard5Text">Structured as a tight-knit family empire where the Chairman works alongside his children, the company enforces absolute, uncompromised structural equality. Traditional martial-arts hierarchies, ranks, and dan boundaries are completely removed — visiting aikidokas, members, and children train or work as equals regardless of rank or background. The headquarters operates an open-door policy: any martial artist ranked higher than the Chairman is enthusiastically welcomed to take the floor as guest sensei for the day or weekend. The organization maintains a standing, open aspiration to host Doshu Moriteru Ueshiba, should he ever visit, as leading master sensei.</p>
       </div>
       <div class="detail-card">
-        <h4>The “Weekend Ukemi” Healing Protocol</h4>
-        <p>A direct practical application of Atatakasa for healing life trauma within the family and company. When his children or students face immense emotional hardship, the Chairman intentionally steps down from the dominant nage (thrower) role on weekends and chooses to act strictly as ukemi — the receiver who takes the fall — for his students and higher-ranked practitioners. By reversing the traditional sensei power dynamic to absorb the physical momentum and impact, he creates a space of profound humility, mutual trust, and active emotional recovery.</p>
+        <h4 data-i18n-key="aikidoCard6Title">The “Weekend Ukemi” Healing Protocol</h4>
+        <p data-i18n-key="aikidoCard6Text">A direct practical application of Atatakasa for healing life trauma within the family and company. When his children or students face immense emotional hardship, the Chairman intentionally steps down from the dominant nage (thrower) role on weekends and chooses to act strictly as ukemi — the receiver who takes the fall — for his students and higher-ranked practitioners. By reversing the traditional sensei power dynamic to absorb the physical momentum and impact, he creates a space of profound humility, mutual trust, and active emotional recovery.</p>
       </div>
     </div>
   </section>
 
   <!-- ===== VOLUME IX — ORGANIZATION ===== -->
   <section class="section alt" id="org">
-    <p class="vol">Volume IX — Organization</p>
-    <h2>Structure in service of creators</h2>
+    <p class="vol" data-i18n-key="orgVol">Volume IX — Organization</p>
+    <h2 data-i18n-key="orgTitle">Structure in service of creators</h2>
     <div class="org-chart">
-      <div class="org-level"><span>Founder</span></div>
-      <div class="org-level"><span>Chairman</span></div>
-      <div class="org-level"><span>CEO</span></div>
-      <div class="org-level"><span>Japanese Vice Presidents</span></div>
-      <div class="org-level"><span>Creative Directors</span></div>
-      <div class="org-level"><span>Independent Creator Teams</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel1">Founder</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel2">Chairman</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel3">CEO</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel4">Japanese Vice Presidents</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel5">Creative Directors</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel6">Independent Creator Teams</span></div>
     </div>
     <div class="org-chart">
-      <div class="org-level"><span>Global HQ — Tokyo</span></div>
-      <div class="org-level"><span>Regional HQs</span></div>
-      <div class="org-level"><span>Country HQs</span></div>
-      <div class="org-level"><span>Remote Creator Teams</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel7">Global HQ — Tokyo</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel8">Regional HQs</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel9">Country HQs</span></div>
+      <div class="org-level"><span data-i18n-key="orgLevel10">Remote Creator Teams</span></div>
     </div>
   </section>
 
   <!-- ===== VOLUME X — BUSINESS PLAN ===== -->
   <section class="section" id="business">
-    <p class="vol">Volume X — Business Plan</p>
-    <h2>Products</h2>
+    <p class="vol" data-i18n-key="businessVol">Volume X — Business Plan</p>
+    <h2 data-i18n-key="businessTitle">Products</h2>
     <ul class="chip-list">
-      <li>Video Games</li><li>Anime</li><li>Movies</li><li>Cartoons</li>
-      <li>Educational Children's Programs</li><li>Music</li><li>Books</li>
-      <li>Streaming</li><li>Merchandise</li><li>Theme Parks</li>
+      <li data-i18n-key="businessItem1">Video Games</li><li data-i18n-key="businessItem2">Anime</li><li data-i18n-key="businessItem3">Movies</li><li data-i18n-key="businessItem4">Cartoons</li>
+      <li data-i18n-key="businessItem5">Educational Children's Programs</li><li data-i18n-key="businessItem6">Music</li><li data-i18n-key="businessItem7">Books</li>
+      <li data-i18n-key="businessItem8">Streaming</li><li data-i18n-key="businessItem9">Merchandise</li><li data-i18n-key="businessItem10">Theme Parks</li>
     </ul>
 
     <div class="limitations-block">
-      <h3>Content Standards</h3>
-      <p class="section-lede">Creators and developers are expected to produce content that uplifts, inspires, and brings people together. The following themes are not permitted across any product:</p>
+      <h3 data-i18n-key="standardsTitle">Content Standards</h3>
+      <p class="section-lede" data-i18n-key="standardsLead">Creators and developers are expected to produce content that uplifts, inspires, and brings people together. The following themes are not permitted across any product:</p>
       <ul class="limitations-list">
-        <li>Brutal or excessively violent content</li>
-        <li>Horror, scary, or disturbing imagery</li>
-        <li>Inappropriate or mature themes</li>
-        <li>Anything that creates a negative emotional impact</li>
-        <li>Cynical, hopeless, or fear-based messaging</li>
-        <li>Content that normalizes suffering or despair</li>
+        <li data-i18n-key="standard1">Brutal or excessively violent content</li>
+        <li data-i18n-key="standard2">Horror, scary, or disturbing imagery</li>
+        <li data-i18n-key="standard3">Inappropriate or mature themes</li>
+        <li data-i18n-key="standard4">Anything that creates a negative emotional impact</li>
+        <li data-i18n-key="standard5">Cynical, hopeless, or fear-based messaging</li>
+        <li data-i18n-key="standard6">Content that normalizes suffering or despair</li>
       </ul>
-      <p class="section-lede">Instead, all content should strive to be friendly, hopeful, and positive. We create worlds and stories that inspire courage, kindness, joy, and connection. Every project under Four Dragons Inc. should leave audiences feeling better than before.</p>
+      <p class="section-lede" data-i18n-key="standardsLead2">Instead, all content should strive to be friendly, hopeful, and positive. We create worlds and stories that inspire courage, kindness, joy, and connection. Every project under Four Dragons Inc. should leave audiences feeling better than before.</p>
       <ul class="standards-list">
-        <li>+ Friendly &amp; Welcoming</li>
-        <li>+ Inspirational &amp; Hopeful</li>
-        <li>+ Positive &amp; Joyful</li>
-        <li>+ Kind &amp; Compassionate</li>
-        <li>+ Courageous &amp; Adventurous</li>
+        <li data-i18n-key="standardsList1">+ Friendly &amp; Welcoming</li>
+        <li data-i18n-key="standardsList2">+ Inspirational &amp; Hopeful</li>
+        <li data-i18n-key="standardsList3">+ Positive &amp; Joyful</li>
+        <li data-i18n-key="standardsList4">+ Kind &amp; Compassionate</li>
+        <li data-i18n-key="standardsList5">+ Courageous &amp; Adventurous</li>
       </ul>
     </div>
 
   </section>
 
   <section class="section" id="future-research">
-    <p class="vol">Volume XI — Future Research</p>
-    <p class="section-lede">This book continuously evolves — artificial intelligence, global law, finance, psychology, education, entertainment, business, game design, animation, leadership, real management philosophy, health, family wellness, and among others.</p>
+    <p class="vol" data-i18n-key="futureVol">Volume XI — Future Research</p>
+    <p class="section-lede" data-i18n-key="futureLead">This book continuously evolves — artificial intelligence, global law, finance, psychology, education, entertainment, business, game design, animation, leadership, real management philosophy, health, family wellness, and among others.</p>
 
     <div class="detail-card recommendation">
-      <h4>One Recommendation</h4>
-      <p>Most of this philosophy centers on compassion, freedom, and trust, which can make for a distinctive company culture. At the same time, every organization benefits from some shared expectations and coordination. Rather than eliminating all project-management practices, they can be adapted to fit these values — for example, replacing blame-oriented reviews with supportive check-ins, using lightweight planning instead of rigid processes, and encouraging feedback that helps people improve rather than assigning fault.</p>
-      <p>That approach stays true to the core idea:</p>
-      <blockquote class="statement small">"People come first. Great entertainment follows."</blockquote>
-      <p>It also creates a culture that is compassionate without losing the structure needed to build ambitious games, anime, films, and other creative projects over many years.</p>
+      <h4 data-i18n-key="futureCardTitle">One Recommendation</h4>
+      <p data-i18n-key="futureCardText1">Most of this philosophy centers on compassion, freedom, and trust, which can make for a distinctive company culture. At the same time, every organization benefits from some shared expectations and coordination. Rather than eliminating all project-management practices, they can be adapted to fit these values — for example, replacing blame-oriented reviews with supportive check-ins, using lightweight planning instead of rigid processes, and encouraging feedback that helps people improve rather than assigning fault.</p>
+      <p data-i18n-key="futureCardText2">That approach stays true to the core idea:</p>
+      <blockquote class="statement small" data-i18n-key="futureQuote">"People come first. Great entertainment follows."</blockquote>
+      <p data-i18n-key="futureCardText3">It also creates a culture that is compassionate without losing the structure needed to build ambitious games, anime, films, and other creative projects over many years.</p>
     </div>
   </section>
 
   <section class="section" id="philosophy">
-    <p class="vol">Volume XII — Creative Philosophy</p>
-    <h2>No deadlines. Just great work.</h2>
+    <p class="vol" data-i18n-key="philosophyVol">Volume XII — Creative Philosophy</p>
+    <h2 data-i18n-key="philosophyTitle">No deadlines. Just great work.</h2>
 
-    <p class="section-lede">At Four Dragons Inc., we don't rush our creators. The best work comes when you're free to explore, iterate, and let ideas breathe — not when a calendar is breathing down your neck.</p>
+    <p class="section-lede" data-i18n-key="philosophyLead1">At Four Dragons Inc., we don't rush our creators. The best work comes when you're free to explore, iterate, and let ideas breathe — not when a calendar is breathing down your neck.</p>
 
     <ul class="chip-list">
-      <li>"I'm not chasing the clock on this."</li>
-      <li>"I'm focused on the work, not the pressure of the date."</li>
-      <li>"I'm staying ahead of the game so the deadline isn't an issue."</li>
+      <li data-i18n-key="philosophyLine1">"I'm not chasing the clock on this."</li>
+      <li data-i18n-key="philosophyLine2">"I'm focused on the work, not the pressure of the date."</li>
+      <li data-i18n-key="philosophyLine3">"I'm staying ahead of the game so the deadline isn't an issue."</li>
     </ul>
 
-    <p class="section-lede">These aren't just slogans — they're how we actually operate. When people aren't stressed about arbitrary timelines, they take risks, experiment, and produce work they're truly proud of. Rushing creates mediocrity; patience creates masterpieces.</p>
+    <p class="section-lede" data-i18n-key="philosophyLead2">These aren't just slogans — they're how we actually operate. When people aren't stressed about arbitrary timelines, they take risks, experiment, and produce work they're truly proud of. Rushing creates mediocrity; patience creates masterpieces.</p>
 
-    <h3 class="subhead">A living proof — Leonardo da Vinci</h3>
+    <h3 class="subhead" data-i18n-key="philosophySubhead">A living proof — Leonardo da Vinci</h3>
 
-    <p>The best example of this philosophy in action is Leonardo da Vinci himself. He took roughly <strong>16 years</strong> to complete the <em>Mona Lisa</em> — from around 1503 until he died in 1519. He never delivered it to the person who commissioned it. He simply kept refining it, because he believed it wasn't finished yet.</p>
+    <p data-i18n-key="philosophyPara1">The best example of this philosophy in action is Leonardo da Vinci himself. He took roughly <strong>16 years</strong> to complete the <em>Mona Lisa</em> — from around 1503 until he died in 1519. He never delivered it to the person who commissioned it. He simply kept refining it, because he believed it wasn't finished yet.</p>
 
-    <p>Think about that: one painting, worked on for nearly two decades. No one told him he was late. No one held a deadline over his head. And yet the result became the most famous painting on Earth — not because he rushed, but because he refused to settle.</p>
+    <p data-i18n-key="philosophyPara2">Think about that: one painting, worked on for nearly two decades. No one told him he was late. No one held a deadline over his head. And yet the result became the most famous painting on Earth — not because he rushed, but because he refused to settle.</p>
 
-    <blockquote class="statement">He didn't build something to meet a date. He built something to be extraordinary.</blockquote>
+    <blockquote class="statement" data-i18n-key="philosophyQuote">He didn't build something to meet a date. He built something to be extraordinary.</blockquote>
 
-    <p>That's exactly the energy Four Dragons Inc. was founded on. Our products — games, anime, films, and everything we create — deserve that same patience. We'd rather take our time and ship something people love than chase a calendar and ship something forgettable.</p>
+    <p data-i18n-key="philosophyPara3">That's exactly the energy Four Dragons Inc. was founded on. Our products — games, anime, films, and everything we create — deserve that same patience. We'd rather take our time and ship something people love than chase a calendar and ship something forgettable.</p>
 
-    <p>The Mona Lisa hangs in the Louvre, visited by millions every year, more than 500 years later. A rushed painting would have been forgotten the moment it was finished. The work that has no deadline is the work that changes the world.</p>
+    <p data-i18n-key="philosophyPara4">The Mona Lisa hangs in the Louvre, visited by millions every year, more than 500 years later. A rushed painting would have been forgotten the moment it was finished. The work that has no deadline is the work that changes the world.</p>
   </section>
 
   <footer class="site-footer">
     <img src="assets/app_icon.png" alt="Four Dragons Inc. Go emblem" class="footer-icon">
-    <p>Four Dragons Inc. Go (演劇) — Tokyo, Japan &amp; Decentralized Worldwide</p>
-    <p class="footer-sub">Christopher Lee Cajes · Founder, CEO &amp; Chairman</p>
+    <p data-i18n-key="footerText">Four Dragons Inc. Go (演劇) — Tokyo, Japan &amp; Decentralized Worldwide</p>
+    <p class="footer-sub" data-i18n-key="footerSub">Christopher Lee Cajes · Founder, CEO &amp; Chairman</p>
   </footer>
 
   <div class="logo-modal" id="logoModal" role="dialog" aria-modal="true" aria-label="Company logo enlarged">
@@ -441,11 +453,11 @@
         <img src="assets/company_logo.png" alt="Four Dragons Inc. Go — company logo enlarged" class="logo-modal-img">
         <div class="logo-modal-text">
           <p class="logo-modal-details">
-            <strong>Dragon Head Symbol</strong><br>
-            The Founder loves dragons especially DRAGON Type Pokemon and Moves.
+            <strong data-i18n-key="modalTitle">Dragon Head Symbol</strong><br>
+            <span data-i18n-key="modalText">The Founder loves dragons especially DRAGON Type Pokemon and Moves.</span>
           </p>
           <p class="logo-modal-dim">
-            <span class="pillar-index">4</span> The Company Logo — The "4" Text Symbol
+            <span class="pillar-index">4</span> <span data-i18n-key="modalAltTitle">The Company Logo — The "4" Text Symbol</span>
           </p>
         </div>
       </div>
