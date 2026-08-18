@@ -422,7 +422,7 @@ html[data-nav="right"] .nav-links a{flex-direction:row-reverse; text-align:right
 }
 .product-list .name{
   font-family:var(--font-display); font-weight:700; letter-spacing:.03em;
-  color:var(--dragon-blue);
+  color:#ff1500;
 }
 .product-list .cat{
   display:block;
